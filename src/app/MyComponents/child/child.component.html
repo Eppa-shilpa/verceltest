@@ -1,0 +1,18 @@
+<p>child works!</p>
+<p>"Data from parent :" <b>{{data[0]}}</b></p>
+<ul>
+    <ol>
+        <li *ngFor="let user of data">{{ user }}</li>
+      </ol>
+</ul>
+<p>
+    <b>
+        {{obj.fname}}
+    </b>
+    <b>
+        {{obj.lname}}
+    </b>
+</p>
+<button (click)="sendDataToParent()"> click me</button>
+<ng-content></ng-content>
+

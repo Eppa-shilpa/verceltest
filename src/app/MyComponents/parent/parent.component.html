@@ -1,0 +1,10 @@
+<p>parent works!</p>
+<p> Getting Data using ViewChild :
+    {{dataFromChild}}
+</p>
+<h3>{{datafromChild}}</h3>
+<app-child [data]="parentData" (data3)="GetDataFromChild($event)" [obj]="parentObj">
+    <h2>This is projected content</h2>
+</app-child>
+
+

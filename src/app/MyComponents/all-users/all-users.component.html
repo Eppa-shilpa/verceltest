@@ -1,0 +1,6 @@
+<div class="container" *ngFor="let user of users">
+    <div class="user">
+      <h2>First name :{{user.fname}}</h2>
+       <button (click)="showDetails(user)">Show Details</button>
+    </div>
+</div>
